@@ -44,7 +44,7 @@
                         image: selectedFile
                     });
                     const label = result.data[0].label;
-                    responseText.innerText = "Response: " + label;//JSON.stringify(result.data);
+                    responseText.innerText = "This vehicle is: " + label;//JSON.stringify(result.data);
                 } catch (error) {
                     responseText.innerText = "Error: " + error.message;
                 }
