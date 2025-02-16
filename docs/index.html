@@ -28,6 +28,7 @@
 
         // Handle image preview
         upload.addEventListener('change', (event) => {
+            debugger;
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
@@ -43,6 +44,7 @@
 
         // Send image to Gradio API
         sendBtn.addEventListener('click', async () => {
+            debugger;
             sendBtn.disabled = true;
             responseText.innerText = "Processing...";
 
