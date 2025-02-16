@@ -43,8 +43,8 @@
                     const result = await client.predict("/predict", {
                         image: selectedFile
                     });
-
-                    responseText.innerText = "Response: " + JSON.stringify(result.data);
+                    const label = result.data[0].label;
+                    responseText.innerText = "Response: " + label;//JSON.stringify(result.data);
                 } catch (error) {
                     responseText.innerText = "Error: " + error.message;
                 }
