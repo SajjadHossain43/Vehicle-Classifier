@@ -2,8 +2,8 @@ remote_theme: daviddarnes/alembic@main
 plugins:
 - jekyll-remote-theme
 
-title: Vehicle Classifier
-description: A Vehicle classification API that classifies around 25 different types of Vehicles on land
+title: Cap Recognizer
+description: An image classification API that classifies 20 different types of caps worn around the world
 
 author:
-  name: Md. Sajjad Hossain
+  name: Sajjad
