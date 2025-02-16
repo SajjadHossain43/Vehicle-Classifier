@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Vehicle Classifier
 layout: page
 ---
 
