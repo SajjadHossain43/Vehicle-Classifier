@@ -1,0 +1,29 @@
+---
+title: Vehicle Classifier
+layout: page
+---
+
+<input id="photo" type="file">
+<div id="results"></div>
+<script type = "module">
+    import { Client } from "@gradio/client";
+    
+    async function loaded(reader) { 
+        const inputImage = reader.result.blob();
+        const client = await Client.connect("Sajjad43/vehicle-classifier");
+        const result = await client.predict("/predict", { 
+				image: inputImage, 
+        });
+        //const response = await client.predict("/predict", [reader.result]);
+        const label = result['data'][0]['label'];
+        results.innerHTML = `<br/> <img src = "${reader.result}" width="500"> <p>${label}</p>`;
+    }
+    function read() {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => loaded(reader))
+        reader.readAsDataURL(photo.files[0]);
+    }
+    photo.addEventListener('input', read);
+
+    
+</script>

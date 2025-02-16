@@ -1,0 +1,9 @@
+remote_theme: daviddarnes/alembic@main
+plugins:
+- jekyll-remote-theme
+
+title: Vehicle Classifier
+description: A Vehicle classification API that classifies around 25 different types of Vehicles on land
+
+author:
+  name: Md. Sajjad Hossain
