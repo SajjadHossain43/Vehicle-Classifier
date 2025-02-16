@@ -2,6 +2,12 @@ remote_theme: daviddarnes/alembic@main
 plugins:
 - jekyll-remote-theme
 
+navigation:
+  - name: Home
+    link: /
+  - name: Cap Recognizer
+    link: /cap_recognizer.html
+
 title: Cap Recognizer
 description: An image classification API that classifies 20 different types of caps worn around the world
 
