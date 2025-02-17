@@ -28,13 +28,13 @@ The model can classify following classes of land vehicles:
 25. Forklift
 
 # Data Collection & Preparation
-Collection: Used fastai's method to search by term name and save images
-Dataloader: Used DataBlock to set up dataloaders for efficient GPU use
-Data Augmentation: Used fastai's method to augment data for compensating imbalance in the dataset
+Collection: Used fastai's method to search by term name and save images <br/>
+Dataloader: Used DataBlock to set up dataloaders for efficient GPU use <br/>
+Data Augmentation: Used fastai's method to augment data for compensating imbalance in the dataset <br/>
 Details are given in the ```notebooks/```
 
 # Training & Data Cleaning
-To understand the current status of data distribution I trained a model right away without cleaning. Then progressively I cleaned tried different model architecture to best fit our pupose.
+To understand the current status of data distribution I trained a model right away without cleaning. Then progressively I cleaned and tried different model architecture to best fit our pupose.
 Training: Used resnet18, resnet34, resnet50 and convnext_small architectures for finding the best model. Later I found that convnext_small is the one that outperforms all other models I have tried - then trained 4 times for 5, 5, 1, 6 epochs respectively to get the best model.
 Data Cleaning: Used fastai's ImageClassifierCleaner widget for cleaning
 # Deployment
