@@ -15,7 +15,6 @@
 
             let selectedFile;
 
-            // Handle file selection
             upload.addEventListener("change", async (event) => {
                 const file = event.target.files[0];
                 if (file) {
@@ -30,7 +29,6 @@
                 }
             });
 
-            // Send image to Gradio
             sendBtn.addEventListener("click", async () => {
                 if (!selectedFile) return;
 
