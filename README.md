@@ -34,9 +34,9 @@ Data Augmentation: Used fastai's method to augment data for compensating imbalan
 Details are given in the ```notebooks/```
 
 # Training & Data Cleaning
-To understand the current status of data distribution I trained a model right away without cleaning. Then progressively I cleaned and tried different model architecture to best fit our pupose.
-Training: Used resnet18, resnet34, resnet50 and convnext_small architectures for finding the best model. Later I found that convnext_small is the one that outperforms all other models I have tried - then trained 4 times for 5, 5, 1, 6 epochs respectively to get the best model.
-Data Cleaning: Used fastai's ImageClassifierCleaner widget for cleaning
+To understand the current status of data distribution I trained a model right away without cleaning. Then progressively I cleaned and tried different model architecture to best fit our pupose. <br/>
+Training: Used resnet18, resnet34, resnet50 and convnext_small architectures for finding the best model. Later I found that convnext_small is the one that outperforms all other models I have tried - then trained 4 times for 5, 5, 1, 6 epochs respectively to get the best model. <br/>
+Data Cleaning: Used fastai's ImageClassifierCleaner widget for cleaning <br/>
 # Deployment
 I deployed in hugging face which uses GRADIO app. The implementation is there in ```deployment/``` folder.
 ![](deployment/hf-demo.png)
